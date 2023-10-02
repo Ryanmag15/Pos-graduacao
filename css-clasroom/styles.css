@@ -1,0 +1,135 @@
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  animation: moveUp 0.3s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #a7a5a5;
+  text-decoration: underline;
+}
+
+/* Estilos para as seções */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  transform: translateY(0);
+  transition: background-color 0.8s ease-in-out;
+  animation: moveUp 0.3s ease-in-out;
+}
+
+section h2 {
+  color: #333;
+}
+
+section h2:hover {
+  color: #666;
+}
+
+section p {
+  color: #666;
+}
+
+/* Estilos para a lista de planetas */
+section#planetas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#planetas li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilize o primeiro item da lista */
+section#planetas li:first-child {
+    font-size: 24px;
+}
+
+/* Estilize o último item da lista */
+section#planetas li:last-child {
+    border-bottom: none;
+    font-style: italic;
+}
+
+/* Estilize o item na posição 4 da lista (Marte) */
+section#planetas li:nth-child(4) {
+    color: #ff4500; /* Cor personalizada para Marte */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section#estrelas iframe {
+    width: 100%; /* Largura de 100% do contêiner pai */
+    height: 315px; /* Altura inicial 0 para manter a proporção */
+    margin: 0 auto; /* Centralize o vídeo horizontalmente */
+
+    /* Estilize o player de vídeo */
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
